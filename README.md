@@ -7,13 +7,17 @@ An oldy but goody. Create a program that will make change for you.
 
 * You should be able to get optimal change for a given number (optimal being the least amount of coins)
 
-```>> make_change(39)
-=> [25, 10, 1, 1, 1, 1]```
+```
+>> make_change(39)
+=> [25, 10, 1, 1, 1, 1]
+```
 
 *  You shoud be able to change the denominations of coins (in the U.S. we have 1, 5, 10, 25 but what if we lived somewhere they had coins of 1, 7, 10)
 
-```>> make_change(14, [10, 7, 1])
-=> [7, 7]```
+```
+>> make_change(14, [10, 7, 1])
+=> [7, 7]
+```
 
 
 **Submission**
