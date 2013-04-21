@@ -19,5 +19,9 @@ module ChangeMaker
       ChangeMaker.make_change(14, [10, 7, 1]).should eq([7, 7])
     end
 
+    it 'should raise ArgumentError for non argument Array' do
+      expect {ChangeMaker.make_change(12, '24, 12')}.to raise_error(ArgumentError, /.+/)
+    end
+
   end
 end
