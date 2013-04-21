@@ -3,6 +3,10 @@ require 'spec_helper'
 module ChangeMaker
   describe 'MakeChange' do
 
+    it 'should be an instance of Array' do
+      ChangeMaker.make_change(2).should be_an_instance_of(Array)
+    end
+
     it 'should make a change array optimal for 25cents' do
       ChangeMaker.make_change(25).should eq([25])
     end
