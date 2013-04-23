@@ -7,21 +7,21 @@ class Machine
 
   def generate_change
     mutable_change = @change
-    generate_change = []
+    change_given = []
     @coins.reduce(mutable_change) do |change, coin|
       next change if change - coin < 0
       product = change / coin
-      product.times { generate_change << coin }
+      product.times { change_given << coin }
       change -= product * coin
     end
-    generate_change
+    change_given
   end
 
   class << self
     def make_change(change, coins=[1, 5, 10, 25])
       if validate_denominations(coins)
         machine = Machine.new(change, coins)
-        42
+        machine.generate_change
       end
     end
 
