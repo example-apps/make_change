@@ -1,26 +1,6 @@
-kata starter
+Change Machine
 ================
 
-This is a repo that can easily be used to start a code kata.
+Project allows you to find change that needs to be give for amount specified.
 
-##### Included is:
-
-- rsepc
-- autotest (with growl notifications)
-- pry
-
-#### To setup
-
-```
-$ git clone <repo>
-$ cd <directory>
-$ bundle install
-```
-
-if you would like autotest to run as you are coding:
-
-```
-$ autotest
-```
-it will auto run the rsepc test when a a test is edited or created as well
-if your code is changed.
+[Code Climate](https://codeclimate.com/github/abrahamoshel/make_change)
