@@ -20,7 +20,7 @@ $ rspec
 ### To get change:
 
 ```
-Machine.get_change(<value>)
+Machine.get_change(30)
 ```
 
 since it defaults to US coins if you want to use another denomination
